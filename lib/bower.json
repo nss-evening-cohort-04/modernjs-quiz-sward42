@@ -1,0 +1,20 @@
+{
+  "name": "modernjs-quiz-sward42",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sarah Ward <sarahward42@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zoeames/NSS-evening-class-curriculum",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
