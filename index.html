@@ -2,11 +2,76 @@
 <html>
 <head>
 	<title>Modern Javascript Developer Mastery Exercise</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="robots.css">
 </head>
 <body>
 
+<h1 id="title">Robot Battledome</h1>
+
+	<div id="first-robot" class="robots col-md-4">
+		<label>Enter Robot Name:</label>
+		<input type="text" id="robot1-name" class="name-input">
+
+		<label>Select Robot Type:</label>
+		<select id="robot1-type">
+			<option value="None">Select Type</option>
+			<option value="Drogon">Drogon</option>
+			<option value="Pteranabomb">Pteranabomb</option>
+			<option value="BigCroc">Big Croc</option>
+			<option value="Tricerabot">Tricerabot</option>
+			<option value="MoleTroll">MoleTroll</option>
+			<option value="ElectroWorm">ElectroWorm</option>
+			
+		</select>
+		<button id="generate-robot1" class="robot-btns">Create Robot 1</button>
 
 
+		
+		<div id="robot1-status">
+			
+		</div>
+
+	</div>	
+
+	<div id="battleground" class="col-md-4">
+		<button id="attack-btn">Attack!</button>
+		
+		<div id="battle-stats">
+			
+		</div>
+
+	</div>
+
+	<div id="second-robot" class="robots col-md-4">
+		<label>Enter Robot Name:</label>
+		<input type="text" id="robot2-name" class="name-input">
+
+		<label>Select Robot Type:</label>
+		<select id="robot2-type" >
+			<option value="None">Select Type</option>
+			<option value="Drogon">Drogon</option>
+			<option value="Pteranabomb">Pteranabomb</option>
+			<option value="BigCroc">Big Croc</option>
+			<option value="Tricerabot">Tricerabot</option>
+			<option value="MoleTroll">MoleTroll</option>
+			<option value="ElectroWorm">ElectroWorm</option>
+			
+		</select>
+		<button id="generate-robot2" class="robot-btns">Create Robot 2</button>
+		<div id="robot2-status">
+			
+		</div>
+
+	</div>
+	
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="javascripts/main.js"></script>
+<script type="text/javascript" src="javascripts/app.js"></script>
 </body>
 </html>

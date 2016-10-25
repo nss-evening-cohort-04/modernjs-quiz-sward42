@@ -1,0 +1,38 @@
+.robots {
+	background-color: lightgrey;
+	display: inline-block;
+	
+	height: 400px;
+	padding: 20px;
+	text-align: center;
+}
+
+#battleground {
+	
+	height: 400px;
+	display: inline-block;
+	padding: 20px;
+	text-align: center;
+}
+
+#title {
+	text-align: center;
+}
+
+.robot-btns {
+	display: block;
+	margin: 10px auto;
+}
+
+.name-input {
+	display: block;
+	margin: 10px auto;
+}
+
+#battle-stats {
+	height: 300px;
+	width: 80%;
+	background-color: yellow;
+	overflow: auto;
+	margin: 10px auto;
+}
