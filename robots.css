@@ -36,3 +36,14 @@
 	overflow: auto;
 	margin: 10px auto;
 }
+
+#play-again {
+	display: none;
+}
+
+
+.hide {
+	display: none;
+}
+
+

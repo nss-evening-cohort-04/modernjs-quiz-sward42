@@ -10,6 +10,8 @@ let robot1Status = $('#robot1-status');
 let robot2Status = $('#robot2-status');
 let robotSelected;
 
+$("#attack-btn").prop("disabled", true);
+
 $("#robot1-type").change((event) =>{
 	console.log($(event.target).val());
 	typeSelected1 = $(event.target).val();
@@ -25,11 +27,16 @@ $("#robot2-type").change((event) =>{
 $("#generate-robot1").click((event) =>{
 	generateRobot(typeSelected1, "robot1");
     printRobotToDom(robot1Status, robot1, typeSelected1);
+    $("#robot1-create").addClass("hide");
+    
 });
 
 $("#generate-robot2").click((event) =>{
     generateRobot(typeSelected2, "robot2");
     printRobotToDom(robot2Status, robot2, typeSelected2);
+    $("#robot2-create").addClass("hide");
+
+
 });
 
 
@@ -53,6 +60,9 @@ function generateRobot(type, player) {
         console.log("robot1", robotSelected);
         }
     });
+    if (robot1 && robot2){
+        $("#attack-btn").prop("disabled", false);
+    }
 }
 
 function printRobotToDom(divId, robot, type) {
@@ -79,6 +89,30 @@ $("#attack-btn").click((event) =>{
 });
 
 $("#battle-stats").scrollTop = $("#battle-stats").scrollHeight;
+
+$("#play-again").click(()=>{
+    $("#robot1-status").html("");
+    $("#robot2-status").html("");
+
+    $("#robot1-name").val("");
+    $("#robot2-name").val("");
+
+    $("#robot1-type").val("None");
+    $("#robot2-type").val("None");
+
+    $("#robot1-create").removeClass("hide");
+    $("#robot2-create").removeClass("hide");
+
+    $("#battle-stats").html("");
+
+
+    $("#play-again").addClass("hide");
+
+
+    robot1 = undefined;
+    robot2 = undefined;
+
+});
 
 
 

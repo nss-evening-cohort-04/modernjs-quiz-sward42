@@ -34,9 +34,13 @@ var Robot =(function(mainRobot){
 	    if (target.life <= 0) {
 	    	target.life = 0;
 	    	$('#battle-stats').html(`<h2>${attackingRobot.name} has defeated ${target.name} with a ${attackingRobot.weapon}!</h2>`);
+	    	$("#attack-btn").prop("disabled", true);
+    		$("#play-again").show().removeClass("hide");
 	    } else if (attackingRobot.life <= 0){
 	    	attackingRobot.life = 0;
 	    	$('#battle-stats').html(`<h2>${target.name} has defeated ${attackingRobot.name} with a ${target.weapon}!</h2>`);
+	    	$("#attack-btn").prop("disabled", true);
+    		$("#play-again").show().removeClass("hide");
 	    }
 	};
 
